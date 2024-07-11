@@ -20,7 +20,6 @@ export function LampDemo() {
        connect us
         
        <div className="relative mt-20">
-       <PlaceholdersAndVanishInput onChange={(e)=>{}} onSubmit={()=>{}} placeholders={["enetr your email address"]}/>
        </div>
       </motion.h1>
     </LampContainer>
