@@ -64,7 +64,7 @@ export const ImageSlider = ({
   return (
     <div>
 
-      <div className={cn(className, "relative w-full ")}>
+      <div className={cn(className, "relative w-full h-[28rem] sm:h-screen")}>
 
         <div className="relative overflow-hidden w-full h-full">
           <AnimatePresence >
@@ -77,7 +77,7 @@ export const ImageSlider = ({
               className="absolute w-full inset-0 h-full rounded"
             >
               <Image
-                className="w-full h-full object- shadow-xl object-center"
+                className="w-full h-full  shadow-xl object-center"
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex}`}
               />
@@ -93,7 +93,7 @@ export const ImageSlider = ({
       </div>
 
       <div className="w-full flex pt-10">
-        <div className="flex justify-between w-80 ml-auto mr-10">
+        <div className="flex justify-between w-40 sm:w-80 ml-auto mr-10">
           <button onClick={handlePrevious} className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white  text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400"><BiLeftArrow /></button>
           <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white e text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" onClick={handleNext}><BiRightArrow /></button>
         </div>
