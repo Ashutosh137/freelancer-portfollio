@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <FloatingNav />
-      <div className="pt-20 relative w-full h-full z-10">
+      <div className=" relative w-full h-full z-10">
         <div
           className="z-50 bg-black/35 w-full absolute inset-0 flex flex-col justify-center items-center"
         >
@@ -78,7 +78,7 @@ export default function Home() {
 
       <footer className="bg-stone-100 w-full rounded-lg shadow  p-4">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div className="flex flex-wrap items-center justify-between">
+          <div className="flex flex-wrap sm:flex-nowrap items-center justify-between">
             <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
               <Image src={logo} className="h-16 w-16" alt="Flowbite Logo" />
               <span className="self-center text-2xl  font-semibold whitespace-nowrap ">Artillo</span>

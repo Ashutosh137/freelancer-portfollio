@@ -12,15 +12,15 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-slate-50 fixed h-20 inset-0 w-full z-50 border-gray-200">
-            <div className="max-w-screen  mx-4 flex items-center justify-between w-full p-4">
+        <nav className="bg-[#fffff0] fixed h-20 inset-0 w-full z-50 border-gray-200">
+            <div className=" mx-4 flex items-center justify-between w-full p-4">
                 <a href="/" className="rtl:space-x-reverse">
                     <Image src={logo} className="h-16 w-full sm:mx-3 py-1" alt="Logo" />
                 </a>
                 <button
                     onClick={toggleMenu}
                     type="button"
-                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 "
+                    className=" inline-flex sm:hidden items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 "
                     aria-controls="navbar-default"
                     aria-expanded={isMenuOpen ? 'true' : 'false'}
                 >
@@ -44,7 +44,7 @@ function Navbar() {
                     className={`hidden mr-16 md:block -`}
                     id="navbar-default"
                 >
-                    <ul className="font-medium w-full ml-auto text-xl flex p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-black dark:border-gray-700">
+                    <ul className="font-medium w-full ml-auto text-xl flex p-0 mt-4 border border-gray-100 rounded-lg bg-[#fffff0] flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  text-black dark:border-gray-700">
                         <li >
                             <a
                                 href="#"
@@ -82,12 +82,11 @@ function Navbar() {
                 </div>
             </div>
             <AnimatePresence>
-
                 <motion.div
                     initial={{ x: '-100%' }}
                     animate={{ x: isMenuOpen ? 0 : '-100%' }}
                     transition={{ type: 'spring', stiffness: 300 }}
-                    className={`fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-40 md:hidden ${isMenuOpen ? 'block' : 'hidden'
+                    className={`fixed top-0 left-0 w-64 h-full bg-[#fffff0] shadow-lg z-40 md:hidden ${isMenuOpen ? 'block' : 'hidden'
                         }`}
                 >
                     <ul className="font-medium text-xl flex flex-col p-4 mt-4 text-black">
@@ -156,7 +155,7 @@ export const FloatingNav = ({
         if (typeof current === "number") {
             let direction = current! - scrollYProgress.getPrevious()!;
 
-            if (scrollYProgress.get() < 0.08) {
+            if (scrollYProgress.get() < 0.06) {
                 setVisible(true);
             } else {
                 if (direction < 0) {
