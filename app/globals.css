@@ -15,7 +15,10 @@ body {
   color:black;
   background:#fffff0
 }
-
+.clip{
+  clip-path: polygon( 50px 0px, 450px 0px, 500px 0px, 500px 209px, 498px 398px, 0px 500px, 0px 496px, 0px 0px);
+  overflow:hidden;
+}
 body::-webkit-scrollbar{
   display: none;
 }

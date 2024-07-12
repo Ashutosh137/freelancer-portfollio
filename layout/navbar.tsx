@@ -12,10 +12,10 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-[#fffff0] fixed h-20 inset-0 w-full z-50 border-gray-200">
-            <div className=" mx-4 flex items-center justify-between w-full p-4">
+        <nav className="bg-[#fffff0] fixed h-16 inset-0 w-full z-50 border-gray-200">
+            <div className=" mx-4 flex items-center justify-between w-full pX-4">
                 <a href="/" className="rtl:space-x-reverse">
-                    <Image src={logo} className="h-16 w-full sm:mx-3 py-1" alt="Logo" />
+                    <Image src={logo} className="h-16 w-full sm:mx-3 py-2" alt="Logo" />
                 </a>
                 <button
                     onClick={toggleMenu}
@@ -155,7 +155,7 @@ export const FloatingNav = ({
         if (typeof current === "number") {
             let direction = current! - scrollYProgress.getPrevious()!;
 
-            if (scrollYProgress.get() < 0.06) {
+            if (scrollYProgress.get() <0.1) {
                 setVisible(true);
             } else {
                 if (direction < 0) {

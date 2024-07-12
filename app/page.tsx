@@ -11,12 +11,13 @@ import Image from "next/image";
 import Marquee from "@/components/marcos";
 import logo from "@/public/logotp.png"
 import Input from "@/layout/input";
+import Footer from "@/layout/footer";
 export default function Home() {
   return (
     <div className="w-full">
       <FloatingNav />
-      <div className="mt-20 relative w-full h-full z-10">
-        <div
+      <div className="mt-16 relative w-full h-full z-10">
+        {/* <div
           className="z-50 bg-black/35 w-full absolute inset-0 flex flex-col justify-center items-center"
         >
           <p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
@@ -25,7 +26,7 @@ export default function Home() {
           <button className="px-5 py-2 backdrop-blur-sm border bg-emerald-300/30 border-emerald-500/20 text-white mx-auto text-center rounded-3xl relative mt-4">
             <span>Join now →</span>
           </button>
-        </div>
+        </div> */}
         <Image className="object-center w-full  sm:h-[90vh]" src={HomeImage} alt="home" />
       </div>
 
@@ -70,38 +71,41 @@ export default function Home() {
         </Marquee>
       </section>
 
+      <section className="sm:mx-20 block my-5">
+        <div className="sm:mx-20  flex w-full justify-between space-x-3 items-center  ">
 
-
-
-      <Input />
-
-
-      <footer className="bg-stone-100 w-full rounded-lg shadow  p-4">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div className="flex flex-wrap sm:flex-nowrap items-center justify-between">
-            <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-              <Image src={logo} className="h-16 w-16" alt="Flowbite Logo" />
-              <span className="self-center text-2xl  font-semibold whitespace-nowrap ">Artillo</span>
-            </a>
-            <ul className="flex w-full justify-center flex-wrap items-center mb-6 text-base md:text-xl font-medium text-gray-700">
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">About</a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">Contact</a>
-              </li>
-            </ul>
+          <div className="w-full p-3 flex flex-col justify-center  text-lg gap-2">
+            <h1 className="text-3xl font-bold capitalize ">Fitting design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit animi facere nobis. Dolor tempore minima, eligendi provident distinctio sed?</p>
           </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" className="hover:underline">Artillo</a>. All Rights Reserved.</span>
+          <div className="w-full  ">
+            <Image src={image6} className="w-full h-full aspect-square rounded-full px-3 " alt="logo" />
+          </div>
+
         </div>
-      </footer>
+      </section>
+      <section className="sm:mx-20 block my-20">
+        <div className="  flex flex-row-reverse space-x-3 w-full justify-between items-center  ">
+
+          <div className="w-full p-2 flex flex-col justify-center  text-lg gap-2">
+            <h1 className="text-3xl font-bold capitalize ">Fitting design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit animi facere nobis. Dolor tempore minima, eligendi provident distinctio sed?</p>
+          </div>
+          <div className="w-full  ">
+            <Image src={image6} className=" w-full aspect-square rounded-full px-3" alt="logo" />
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      {/* <Input /> */}
+
+
+      <Footer />
 
 
     </div>
