@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <nav className="bg-slate-50 fixed h-20 inset-0 w-full z-50 border-gray-200">
             <div className="max-w-screen  mx-4 flex items-center justify-between w-full p-4">
-                <a href="https://flowbite.com/" className="rtl:space-x-reverse">
+                <a href="/" className="rtl:space-x-reverse">
                     <Image src={logo} className="h-16 w-full sm:mx-3 py-1" alt="Logo" />
                 </a>
                 <button
@@ -41,7 +41,7 @@ function Navbar() {
                     </svg>
                 </button>
                 <div
-                    className={`hidden mr-16  md:block -`}
+                    className={`hidden mr-16 md:block -`}
                     id="navbar-default"
                 >
                     <ul className="font-medium w-full ml-auto text-xl flex p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-black dark:border-gray-700">
@@ -156,7 +156,7 @@ export const FloatingNav = ({
         if (typeof current === "number") {
             let direction = current! - scrollYProgress.getPrevious()!;
 
-            if (scrollYProgress.get() < 0.15) {
+            if (scrollYProgress.get() < 0.08) {
                 setVisible(true);
             } else {
                 if (direction < 0) {
