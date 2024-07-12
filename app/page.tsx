@@ -93,7 +93,7 @@ export default function Home() {
         </h1>
         <div className="flex justify-center mx-10">
 
-          <PlaceholdersAndVanishInput onChange={() => { }} onSubmit={() => { }} placeholders={["enetr your email addree"]} />
+          <PlaceholdersAndVanishInput onChange={() => { }} onSubmit={() => { }} placeholders={["Enter your email address"]} />
         </div>
       </section>
 
@@ -106,7 +106,7 @@ export default function Home() {
                 <Image src={logo} className="h-16 w-16" alt="Flowbite Logo" />
                 <span className="self-center text-2xl  font-semibold whitespace-nowrap ">Artillo</span>
               </a>
-              <ul className="flex flex-wrap items-center mb-6 text-base font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <ul className="flex flex-wrap items-center mb-6 text-base md:text-xl font-medium text-gray-700">
                 <li>
                   <a href="#" className="hover:underline me-4 md:me-6">About</a>
                 </li>
