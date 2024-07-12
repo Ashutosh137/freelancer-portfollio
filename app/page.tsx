@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <FloatingNav />
-      <div className=" relative w-full h-full z-10">
+      <div className="mt-20 relative w-full h-full z-10">
         <div
           className="z-50 bg-black/35 w-full absolute inset-0 flex flex-col justify-center items-center"
         >
