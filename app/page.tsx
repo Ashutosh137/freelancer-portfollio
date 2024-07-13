@@ -71,30 +71,44 @@ export default function Home() {
         </Marquee>
       </section>
 
-      <section className="sm:mx-20 block my-5">
-        <div className="sm:mx-20  flex w-full justify-between space-x-3 items-center  ">
+      <section className="sm:px-20 sm:h-screen bg-gray-400 flex-row flex sm:flex-row-reverse flex-wrap sm:flex-nowrap items-center justify-center py-10 rounded-xl space-y-6    px-3  ">
 
-          <div className="w-full p-3 flex flex-col justify-center  text-lg gap-2">
+        <div className="w-full sm:pl-10">
+          <Image className="object-center w-full rounded-r-3xl rounded-l-full " src={HomeImage} alt="home" />
+        </div>
+        <div className="w-full flex flex-col space-y-4">
+          <h2 className="text-3xl sm:text-5xl font-bold capitalize">
+            experties
+          </h2>
+          <p className="max-w-screen-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime molestias sint totam fugit, voluptatum illo hic error dolores ad ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quidem ipsa atque? Iure nesciunt impedit molestias porro quos incidunt eum, doloribus repellat eveniet dolorem nisi dolore, ex, tempora perspiciatis magnam!? Eligendi nihil perferendis minus sunt dolor? Veniam, distinctio alias!</p>
+          <button className="px-5 py-2 bg-sky-500 text-black text-base font-medium rounded-xl hover:scale-105 transition-all ease-in  mr-auto capitalize">learn more →</button>
+        </div>
+
+      </section>
+
+      <section className="sm:px-20 block my-16">
+        <div className="  flex w-full justify-between space-x-3 items-center  ">
+          <div className="w-full p-3 flex flex-col justify-center  text-lg space-y-3">
             <h1 className="text-3xl font-bold capitalize ">Fitting design</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit animi facere nobis. Dolor tempore minima, eligendi provident distinctio sed?</p>
+            <p>Lorem ipsum dolor sit ameectetur, adipisicing Exercitationem assumenda labore enim omnis quis corrupti expedita m?</p>
+            <button className="px-5 py-2 bg-sky-500 text-black text-base font-medium  rounded-xl hover:scale-105 transition-all ease-in  mr-auto capitalize">learn more →</button>
           </div>
-          <div className="w-full  ">
-            <Image src={image6} className="w-full h-full aspect-square rounded-full px-3 " alt="logo" />
+          <div className="w-full h-full ">
+            <Image src={image6} className="w-full h-full clip rounded-3xl sm:px-3 " alt="logo" />
           </div>
-
         </div>
       </section>
       <section className="sm:mx-20 block my-20">
-        <div className="  flex flex-row-reverse space-x-3 w-full justify-between items-center  ">
+        <div className="flex flex-row-reverse space-x-3 w-full justify-between items-center  ">
 
-          <div className="w-full p-2 flex flex-col justify-center  text-lg gap-2">
+          <div className="w-full p-3 mx-3 flex flex-col justify-center  text-lg space-y-3">
             <h1 className="text-3xl font-bold capitalize ">Fitting design</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit animi facere nobis. Dolor tempore minima, eligendi provident distinctio sed?</p>
+            <p>Lorem ipsum dolor sit amet consectetur tempore minima, eligendi provident distinctio sed?</p>
+            <button className="px-5 py-2 bg-sky-500 text-black text-base font-normal my-2 rounded-xl hover:scale-105 transition-all ease-in  mr-auto capitalize">learn more →</button>
           </div>
-          <div className="w-full  ">
-            <Image src={image6} className=" w-full aspect-square rounded-full px-3" alt="logo" />
+          <div className="w-full h-full  ">
+            <Image src={image6} className=" w-full h-full  clip rounded-3xl sm:px-3 " alt="logo" />
           </div>
-
         </div>
       </section>
 

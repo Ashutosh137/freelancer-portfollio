@@ -8,18 +8,52 @@
   --background-end-rgb: 255, 255, 255;
   padding: 0%;
   margin: 0%;
+  width: 100%;
 }
-
 
 body {
-  color:black;
-  background:#fffff0
+  color: black;
+  background: #fffff0;
 }
-.clip{
-  clip-path: polygon( 50px 0px, 450px 0px, 500px 0px, 500px 209px, 498px 398px, 0px 500px, 0px 496px, 0px 0px);
-  overflow:hidden;
+.clip {
+  animation: clip 15s infinite ease;
+  overflow: hidden;
+  border-radius: 100%;
 }
-body::-webkit-scrollbar{
+
+@keyframes clip {
+  0% {
+    clip-path: polygon(
+      50% 0%, 65% 5%, 80% 10%, 90% 20%, 100% 50%, 90% 80%, 80% 90%, 65% 95%, 
+      50% 100%, 35% 95%, 20% 90%, 10% 80%, 0% 50%, 10% 20%, 20% 10%, 35% 5%
+    );
+  }
+  25% {
+    clip-path: polygon(
+      60% 5%, 75% 15%, 85% 30%, 95% 45%, 85% 65%, 75% 80%, 60% 90%, 50% 95%, 
+      40% 90%, 25% 80%, 15% 65%, 5% 45%, 15% 30%, 25% 15%, 40% 5%, 50% 0%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      55% 5%, 70% 15%, 80% 25%, 90% 45%, 80% 65%, 70% 80%, 55% 90%, 50% 95%, 
+      45% 90%, 30% 80%, 20% 65%, 10% 45%, 20% 25%, 30% 15%, 45% 5%, 50% 0%
+    );
+  }
+  75% {
+    clip-path: polygon(
+      60% 10%, 75% 20%, 85% 35%, 95% 55%, 85% 75%, 75% 90%, 60% 95%, 50% 100%, 
+      40% 95%, 25% 90%, 15% 75%, 5% 55%, 15% 35%, 25% 20%, 40% 10%, 50% 5%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      50% 0%, 65% 5%, 80% 10%, 90% 20%, 100% 50%, 90% 80%, 80% 90%, 65% 95%, 
+      50% 100%, 35% 95%, 20% 90%, 10% 80%, 0% 50%, 10% 20%, 20% 10%, 35% 5%
+    );}
+}
+
+body::-webkit-scrollbar {
   display: none;
 }
 
